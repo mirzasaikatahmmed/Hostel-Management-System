@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Hostel_Management_System
+namespace Hostel_Management_System.Bills
 {
-    public partial class Form1 : Form
+    public partial class UpdateBillStatusForm : Form
     {
-        public Form1()
+        public UpdateBillStatusForm()
         {
             InitializeComponent();
         }
