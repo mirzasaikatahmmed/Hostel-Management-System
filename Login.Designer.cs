@@ -31,14 +31,14 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.emailTextBox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.registerLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.loginBTN = new System.Windows.Forms.Button();
             this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.loginBTN = new System.Windows.Forms.Button();
-            this.registerLinkLabel = new System.Windows.Forms.LinkLabel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.emailTextBox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -82,35 +82,39 @@
             this.panel1.Size = new System.Drawing.Size(394, 480);
             this.panel1.TabIndex = 1;
             // 
-            // label1
+            // label2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Broadway", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(79, 37);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(244, 50);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Welcome";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(43, 99);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(316, 23);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Enter your Email and Password";
             // 
-            // label3
+            // registerLinkLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(43, 175);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 23);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Email: ";
+            this.registerLinkLabel.AutoSize = true;
+            this.registerLinkLabel.Font = new System.Drawing.Font("Lucida Bright", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.registerLinkLabel.Location = new System.Drawing.Point(109, 417);
+            this.registerLinkLabel.Name = "registerLinkLabel";
+            this.registerLinkLabel.Size = new System.Drawing.Size(178, 20);
+            this.registerLinkLabel.TabIndex = 7;
+            this.registerLinkLabel.TabStop = true;
+            this.registerLinkLabel.Text = "Create New Account";
             // 
-            // emailTextBox
+            // loginBTN
             // 
-            this.emailTextBox.Font = new System.Drawing.Font("Lucida Bright", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailTextBox.ForeColor = System.Drawing.Color.Black;
-            this.emailTextBox.Location = new System.Drawing.Point(47, 201);
-            this.emailTextBox.Multiline = true;
-            this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(312, 37);
-            this.emailTextBox.TabIndex = 3;
+            this.loginBTN.BackColor = System.Drawing.SystemColors.Highlight;
+            this.loginBTN.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginBTN.ForeColor = System.Drawing.Color.White;
+            this.loginBTN.Location = new System.Drawing.Point(47, 349);
+            this.loginBTN.Name = "loginBTN";
+            this.loginBTN.Size = new System.Drawing.Size(312, 51);
+            this.loginBTN.TabIndex = 6;
+            this.loginBTN.Text = "Login";
+            this.loginBTN.UseVisualStyleBackColor = false;
+            this.loginBTN.Click += new System.EventHandler(this.loginBTN_Click);
             // 
             // passwordTextBox
             // 
@@ -132,38 +136,35 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Password: ";
             // 
-            // loginBTN
+            // emailTextBox
             // 
-            this.loginBTN.BackColor = System.Drawing.SystemColors.Highlight;
-            this.loginBTN.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginBTN.ForeColor = System.Drawing.Color.White;
-            this.loginBTN.Location = new System.Drawing.Point(47, 349);
-            this.loginBTN.Name = "loginBTN";
-            this.loginBTN.Size = new System.Drawing.Size(312, 51);
-            this.loginBTN.TabIndex = 6;
-            this.loginBTN.Text = "Login";
-            this.loginBTN.UseVisualStyleBackColor = false;
+            this.emailTextBox.Font = new System.Drawing.Font("Lucida Bright", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailTextBox.ForeColor = System.Drawing.Color.Black;
+            this.emailTextBox.Location = new System.Drawing.Point(47, 201);
+            this.emailTextBox.Multiline = true;
+            this.emailTextBox.Name = "emailTextBox";
+            this.emailTextBox.Size = new System.Drawing.Size(312, 37);
+            this.emailTextBox.TabIndex = 3;
             // 
-            // registerLinkLabel
+            // label3
             // 
-            this.registerLinkLabel.AutoSize = true;
-            this.registerLinkLabel.Font = new System.Drawing.Font("Lucida Bright", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.registerLinkLabel.Location = new System.Drawing.Point(109, 417);
-            this.registerLinkLabel.Name = "registerLinkLabel";
-            this.registerLinkLabel.Size = new System.Drawing.Size(178, 20);
-            this.registerLinkLabel.TabIndex = 7;
-            this.registerLinkLabel.TabStop = true;
-            this.registerLinkLabel.Text = "Create New Account";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(43, 175);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(75, 23);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Email: ";
             // 
-            // label2
+            // label1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(43, 99);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(316, 23);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Enter your Email and Password";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Broadway", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(79, 37);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(239, 48);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Welcome";
             // 
             // Login
             // 
