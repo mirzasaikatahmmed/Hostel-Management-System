@@ -58,6 +58,7 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.ErrorImage = global::Hostel_Management_System.Properties.Resources.icons8_cross_96;
             this.pictureBox2.Image = global::Hostel_Management_System.Properties.Resources.icons8_cross_96;
             this.pictureBox2.Location = new System.Drawing.Point(915, 0);
@@ -103,6 +104,7 @@
             this.registerLinkLabel.TabIndex = 7;
             this.registerLinkLabel.TabStop = true;
             this.registerLinkLabel.Text = "Create New Account";
+            this.registerLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.registerLinkLabel_LinkClicked);
             // 
             // loginBTN
             // 
@@ -177,7 +179,7 @@
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

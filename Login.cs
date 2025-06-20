@@ -46,19 +46,19 @@ namespace Hostel_Management_System
 
                     if (role == "Admin")
                     {
-                        AdminDashboard admin = new AdminDashboard();
+                        AdminDashboard admin = new AdminDashboard(userId);
                         admin.Show();
                         this.Hide();
                     }
                     else if (role == "Staff")
                     {
-                        StaffDashboard investigator = new StaffDashboard();
+                        StaffDashboard investigator = new StaffDashboard(userId);
                         investigator.Show();
                         this.Hide();
                     }
                     else if (role == "Student")
                     {
-                        StudentDashboard reporter = new StudentDashboard();
+                        StudentDashboard reporter = new StudentDashboard(userId);
                         reporter.Show();
                         this.Hide();
                     }
@@ -77,6 +77,13 @@ namespace Hostel_Management_System
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void registerLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Registration registerForm = new Registration();
+            registerForm.Show();
+            this.Hide();
         }
     }
 }

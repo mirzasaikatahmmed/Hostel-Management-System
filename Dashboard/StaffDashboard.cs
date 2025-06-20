@@ -12,9 +12,16 @@ namespace Hostel_Management_System.Dashboard
 {
     public partial class StaffDashboard : Form
     {
+        private int currentUserId;  
         public StaffDashboard()
         {
             InitializeComponent();
+        }
+
+        public StaffDashboard(int userId)
+        {
+            InitializeComponent();
+            currentUserId = userId;
         }
     }
 }
