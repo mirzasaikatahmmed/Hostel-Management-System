@@ -9,9 +9,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
 
 namespace Hostel_Management_System.Dashboard
 {
+    string cs = ConfigurationManager.ConnectionStrings["dhcs"].ConnectionString;
     private int currentUserId = 0;
     public partial class AdminDashboard : Form
     {
@@ -72,10 +74,14 @@ namespace Hostel_Management_System.Dashboard
 
         private void logoutPictureBox_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("You have been logged out successfully.", "Logout", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            Login loginForm = new Login();
-            loginForm.Show();
-            this.Hide();
+            DialogResult result = MessageBox.Show("Are you sure you want to logout?", "Confirm Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                Login loginForm = new Login();
+                loginForm.Show();
+                this.Close();
+            }
         }
     }
 }
