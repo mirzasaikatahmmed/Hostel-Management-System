@@ -259,6 +259,12 @@
     <Compile Include="Students\StudentRoomInfoForm.Designer.cs">
       <DependentUpon>StudentRoomInfoForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Bills\UpdateBillStatusForm.resx">
+      <DependentUpon>UpdateBillStatusForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bills\UtilityBillListForm.resx">
+      <DependentUpon>UtilityBillListForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard\AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -278,11 +284,32 @@
     <EmbeddedResource Include="Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Requests\ServiceRequestForm.resx">
+      <DependentUpon>ServiceRequestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Requests\ViewRequestStatusForm.resx">
+      <DependentUpon>ViewRequestStatusForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rooms\AssignRoomForm.resx">
+      <DependentUpon>AssignRoomForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rooms\RoomListForm.resx">
+      <DependentUpon>RoomListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff\AddEditStaffForm.resx">
+      <DependentUpon>AddEditStaffForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Staff\StaffListForm.resx">
       <DependentUpon>StaffListForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Students\AddEditStudentForm.resx">
+      <DependentUpon>AddEditStudentForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Students\StudentListForm.resx">
       <DependentUpon>StudentListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Students\StudentRoomInfoForm.resx">
+      <DependentUpon>StudentRoomInfoForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
