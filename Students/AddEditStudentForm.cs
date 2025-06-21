@@ -16,5 +16,15 @@ namespace Hostel_Management_System.Students
         {
             InitializeComponent();
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void emailTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
