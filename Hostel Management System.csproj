@@ -161,34 +161,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bills\UpdateBillStatusForm.cs">
+    <Compile Include="View\Bills\UpdateBillStatusForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Bills\UpdateBillStatusForm.Designer.cs">
+    <Compile Include="View\Bills\UpdateBillStatusForm.Designer.cs">
       <DependentUpon>UpdateBillStatusForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Bills\UtilityBillListForm.cs">
+    <Compile Include="View\Bills\UtilityBillListForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Bills\UtilityBillListForm.Designer.cs">
+    <Compile Include="View\Bills\UtilityBillListForm.Designer.cs">
       <DependentUpon>UtilityBillListForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard\AdminDashboard.cs">
+    <Compile Include="View\Dashboard\AdminDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Dashboard\AdminDashboard.Designer.cs">
+    <Compile Include="View\Dashboard\AdminDashboard.Designer.cs">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard\StaffDashboard.cs">
+    <Compile Include="View\Dashboard\StaffDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Dashboard\StaffDashboard.Designer.cs">
+    <Compile Include="View\Dashboard\StaffDashboard.Designer.cs">
       <DependentUpon>StaffDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard\StudentDashboard.cs">
+    <Compile Include="View\Dashboard\StudentDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Dashboard\StudentDashboard.Designer.cs">
+    <Compile Include="View\Dashboard\StudentDashboard.Designer.cs">
       <DependentUpon>StudentDashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
@@ -205,67 +205,67 @@
     <Compile Include="Registration.Designer.cs">
       <DependentUpon>Registration.cs</DependentUpon>
     </Compile>
-    <Compile Include="Requests\ServiceRequestForm.cs">
+    <Compile Include="View\Requests\ServiceRequestForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Requests\ServiceRequestForm.Designer.cs">
+    <Compile Include="View\Requests\ServiceRequestForm.Designer.cs">
       <DependentUpon>ServiceRequestForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Requests\ViewRequestStatusForm.cs">
+    <Compile Include="View\Requests\ViewRequestStatusForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Requests\ViewRequestStatusForm.Designer.cs">
+    <Compile Include="View\Requests\ViewRequestStatusForm.Designer.cs">
       <DependentUpon>ViewRequestStatusForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Rooms\AssignRoomForm.cs">
+    <Compile Include="View\Rooms\AssignRoomForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Rooms\AssignRoomForm.Designer.cs">
+    <Compile Include="View\Rooms\AssignRoomForm.Designer.cs">
       <DependentUpon>AssignRoomForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Rooms\RoomListForm.cs">
+    <Compile Include="View\Rooms\RoomListForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Rooms\RoomListForm.Designer.cs">
+    <Compile Include="View\Rooms\RoomListForm.Designer.cs">
       <DependentUpon>RoomListForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Staff\AddEditStaffForm.cs">
+    <Compile Include="View\Staff\AddEditStaffForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Staff\AddEditStaffForm.Designer.cs">
+    <Compile Include="View\Staff\AddEditStaffForm.Designer.cs">
       <DependentUpon>AddEditStaffForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Staff\StaffListForm.cs">
+    <Compile Include="View\Staff\StaffListForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Staff\StaffListForm.Designer.cs">
+    <Compile Include="View\Staff\StaffListForm.Designer.cs">
       <DependentUpon>StaffListForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Students\AddEditStudentForm.cs">
+    <Compile Include="View\Students\AddEditStudentForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Students\AddEditStudentForm.Designer.cs">
+    <Compile Include="View\Students\AddEditStudentForm.Designer.cs">
       <DependentUpon>AddEditStudentForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Students\StudentListForm.cs">
+    <Compile Include="View\Students\StudentListForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Students\StudentListForm.Designer.cs">
+    <Compile Include="View\Students\StudentListForm.Designer.cs">
       <DependentUpon>StudentListForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Students\StudentRoomInfoForm.cs">
+    <Compile Include="View\Students\StudentRoomInfoForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Students\StudentRoomInfoForm.Designer.cs">
+    <Compile Include="View\Students\StudentRoomInfoForm.Designer.cs">
       <DependentUpon>StudentRoomInfoForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Bills\UpdateBillStatusForm.resx">
+    <EmbeddedResource Include="View\Bills\UpdateBillStatusForm.resx">
       <DependentUpon>UpdateBillStatusForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Bills\UtilityBillListForm.resx">
+    <EmbeddedResource Include="View\Bills\UtilityBillListForm.resx">
       <DependentUpon>UtilityBillListForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dashboard\AdminDashboard.resx">
+    <EmbeddedResource Include="View\Dashboard\AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
@@ -284,31 +284,31 @@
     <EmbeddedResource Include="Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Requests\ServiceRequestForm.resx">
+    <EmbeddedResource Include="View\Requests\ServiceRequestForm.resx">
       <DependentUpon>ServiceRequestForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Requests\ViewRequestStatusForm.resx">
+    <EmbeddedResource Include="View\Requests\ViewRequestStatusForm.resx">
       <DependentUpon>ViewRequestStatusForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Rooms\AssignRoomForm.resx">
+    <EmbeddedResource Include="View\Rooms\AssignRoomForm.resx">
       <DependentUpon>AssignRoomForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Rooms\RoomListForm.resx">
+    <EmbeddedResource Include="View\Rooms\RoomListForm.resx">
       <DependentUpon>RoomListForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Staff\AddEditStaffForm.resx">
+    <EmbeddedResource Include="View\Staff\AddEditStaffForm.resx">
       <DependentUpon>AddEditStaffForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Staff\StaffListForm.resx">
+    <EmbeddedResource Include="View\Staff\StaffListForm.resx">
       <DependentUpon>StaffListForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Students\AddEditStudentForm.resx">
+    <EmbeddedResource Include="View\Students\AddEditStudentForm.resx">
       <DependentUpon>AddEditStudentForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Students\StudentListForm.resx">
+    <EmbeddedResource Include="View\Students\StudentListForm.resx">
       <DependentUpon>StudentListForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Students\StudentRoomInfoForm.resx">
+    <EmbeddedResource Include="View\Students\StudentRoomInfoForm.resx">
       <DependentUpon>StudentRoomInfoForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -339,6 +339,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-logout-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controller\" />
+    <Folder Include="Model\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
