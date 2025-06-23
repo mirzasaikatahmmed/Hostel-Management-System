@@ -14,5 +14,6 @@ namespace Hostel_Management_System.Model
         public string Phone { get; set; }
         public int? AssignedRoomID { get; set; }
         public string Password { get; set; }
+        public int UserID { get; set; }
     }
 }
