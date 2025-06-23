@@ -74,6 +74,7 @@
             this.updateStudentBTN.TabIndex = 15;
             this.updateStudentBTN.Text = "Update";
             this.updateStudentBTN.UseVisualStyleBackColor = false;
+            this.updateStudentBTN.Click += new System.EventHandler(this.updateStudentBTN_Click);
             // 
             // addStudentBTN
             // 
@@ -86,6 +87,7 @@
             this.addStudentBTN.TabIndex = 14;
             this.addStudentBTN.Text = "Add";
             this.addStudentBTN.UseVisualStyleBackColor = false;
+            this.addStudentBTN.Click += new System.EventHandler(this.addStudentBTN_Click);
             // 
             // studentListDataGridView
             // 

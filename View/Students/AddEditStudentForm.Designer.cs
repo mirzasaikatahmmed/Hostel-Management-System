@@ -72,6 +72,7 @@
             this.updateStudentBTN.TabIndex = 16;
             this.updateStudentBTN.Text = "Update";
             this.updateStudentBTN.UseVisualStyleBackColor = false;
+            this.updateStudentBTN.Click += new System.EventHandler(this.updateStudentBTN_Click);
             // 
             // passwordTextBox
             // 
