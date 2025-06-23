@@ -1,22 +1,22 @@
-﻿using Hostel_Management_System.Staff;
+﻿using Hostel_Management_System.Controller;
+using Hostel_Management_System.Staff;
 using Hostel_Management_System.Students;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Configuration;
 
 namespace Hostel_Management_System.Dashboard
 {
-    string cs = ConfigurationManager.ConnectionStrings["dhcs"].ConnectionString;
-    private int currentUserId = 0;
     public partial class AdminDashboard : Form
     {
+        private int currentUserId;
         public AdminDashboard()
         {
             InitializeComponent();
@@ -26,6 +26,16 @@ namespace Hostel_Management_System.Dashboard
         {
             InitializeComponent();
             currentUserId = userID;
+            LoadFormInPanel(new AdminDashboard(currentUserId));
+            LoadUsername();
+        }
+
+        private void LoadUsername()
+        {
+            UserController userController = new UserController();
+            string username = userController.GetUsernameById(currentUserId);
+
+            userNameLabel.Text = $"{username}";
         }
 
         private void sidebarPanel_Paint(object sender, PaintEventArgs e)
@@ -44,7 +54,7 @@ namespace Hostel_Management_System.Dashboard
 
         private void dashboardBTN_Click(object sender, EventArgs e)
         {
-
+            LoadFormInPanel(new AdminDashboard(currentUserId));
         }
 
         private void studentsBTN_Click(object sender, EventArgs e)

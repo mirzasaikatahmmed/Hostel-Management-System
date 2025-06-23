@@ -163,6 +163,7 @@
   <ItemGroup>
     <Compile Include="Controller\AuthController.cs" />
     <Compile Include="Controller\StudentController.cs" />
+    <Compile Include="Controller\UserController.cs" />
     <Compile Include="Model\StudentModel.cs" />
     <Compile Include="Model\UserModel.cs" />
     <Compile Include="View\Bills\UpdateBillStatusForm.cs">

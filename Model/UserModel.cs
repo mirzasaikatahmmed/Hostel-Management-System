@@ -12,6 +12,7 @@ namespace Hostel_Management_System.Models
         public string Role { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
+        public string Name { get; set; }
     }
 
     public class RegistrationModel
