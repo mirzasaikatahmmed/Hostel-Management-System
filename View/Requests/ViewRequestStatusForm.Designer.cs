@@ -75,6 +75,7 @@
             this.statusComboBox.Name = "statusComboBox";
             this.statusComboBox.Size = new System.Drawing.Size(288, 31);
             this.statusComboBox.TabIndex = 12;
+            this.statusComboBox.SelectedIndexChanged += new System.EventHandler(this.statusComboBox_SelectedIndexChanged);
             // 
             // refreshBTN
             // 
@@ -87,6 +88,7 @@
             this.refreshBTN.TabIndex = 23;
             this.refreshBTN.Text = "Refresh";
             this.refreshBTN.UseVisualStyleBackColor = false;
+            this.refreshBTN.Click += new System.EventHandler(this.refreshBTN_Click);
             // 
             // viewRequestFormDataGridView
             // 
