@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.closePictureBox = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.emailTextBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -39,7 +40,6 @@
             this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.updateStudentBTN = new System.Windows.Forms.Button();
-            this.closePictureBox = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.closePictureBox)).BeginInit();
             this.SuspendLayout();
@@ -53,6 +53,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(702, 43);
             this.panel1.TabIndex = 27;
+            // 
+            // closePictureBox
+            // 
+            this.closePictureBox.Image = global::Hostel_Management_System.Properties.Resources.icons8_cross_96;
+            this.closePictureBox.Location = new System.Drawing.Point(664, 3);
+            this.closePictureBox.Name = "closePictureBox";
+            this.closePictureBox.Size = new System.Drawing.Size(35, 35);
+            this.closePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.closePictureBox.TabIndex = 37;
+            this.closePictureBox.TabStop = false;
+            this.closePictureBox.Click += new System.EventHandler(this.closePictureBox_Click);
             // 
             // label2
             // 
@@ -155,16 +166,7 @@
             this.updateStudentBTN.TabIndex = 28;
             this.updateStudentBTN.Text = "Update";
             this.updateStudentBTN.UseVisualStyleBackColor = false;
-            // 
-            // closePictureBox
-            // 
-            this.closePictureBox.Image = global::Hostel_Management_System.Properties.Resources.icons8_cross_96;
-            this.closePictureBox.Location = new System.Drawing.Point(664, 3);
-            this.closePictureBox.Name = "closePictureBox";
-            this.closePictureBox.Size = new System.Drawing.Size(35, 35);
-            this.closePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.closePictureBox.TabIndex = 37;
-            this.closePictureBox.TabStop = false;
+            this.updateStudentBTN.Click += new System.EventHandler(this.updateStudentBTN_Click);
             // 
             // AddEditStaffForm
             // 

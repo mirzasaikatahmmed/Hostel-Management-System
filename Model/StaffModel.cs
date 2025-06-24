@@ -27,7 +27,6 @@ namespace Hostel_Management_System.Model
 
             using (SqlConnection con = new SqlConnection(cs))
             {
-                // SQL query to select all staff members and their associated user details
                 string query = @"
                     SELECT 
                         s.StaffID, 
@@ -113,12 +112,10 @@ namespace Hostel_Management_System.Model
             using (SqlConnection con = new SqlConnection(cs))
             {
                 con.Open();
-                // Begin a transaction to ensure atomicity for inserts into Users and Staff tables
                 SqlTransaction transaction = con.BeginTransaction();
 
                 try
                 {
-                    // 1. Insert into Users table
                     string userQuery = @"
                         INSERT INTO Users (Username, Email, Password, Role) 
                         VALUES (@Username, @Email, @Password, 'Staff');

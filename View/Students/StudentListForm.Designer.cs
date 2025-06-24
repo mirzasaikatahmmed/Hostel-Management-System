@@ -62,6 +62,7 @@
             this.refreshBTN.TabIndex = 16;
             this.refreshBTN.Text = "Refresh";
             this.refreshBTN.UseVisualStyleBackColor = false;
+            this.refreshBTN.Click += new System.EventHandler(this.refreshBTN_Click);
             // 
             // updateStudentBTN
             // 

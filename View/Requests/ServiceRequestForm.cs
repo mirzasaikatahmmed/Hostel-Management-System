@@ -16,5 +16,15 @@ namespace Hostel_Management_System.Requests
         {
             InitializeComponent();
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ServiceRequestForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

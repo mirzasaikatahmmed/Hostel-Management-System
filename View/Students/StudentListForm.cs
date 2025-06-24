@@ -70,5 +70,10 @@ namespace Hostel_Management_System.Students
                 MessageBox.Show("Please select a student to update.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void refreshBTN_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
