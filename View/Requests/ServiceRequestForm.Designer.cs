@@ -31,14 +31,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.studentNameLabel = new System.Windows.Forms.Label();
+            this.roomNoLabel = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.requestTypeComboBox = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.refreshBTN = new System.Windows.Forms.Button();
+            this.descriptionRiceTextBox = new System.Windows.Forms.RichTextBox();
+            this.submitRequestBTN = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,25 +71,25 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Student Name :";
             // 
-            // label3
+            // studentNameLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(180, 56);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 23);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "[NAME]";
+            this.studentNameLabel.AutoSize = true;
+            this.studentNameLabel.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentNameLabel.Location = new System.Drawing.Point(180, 56);
+            this.studentNameLabel.Name = "studentNameLabel";
+            this.studentNameLabel.Size = new System.Drawing.Size(83, 23);
+            this.studentNameLabel.TabIndex = 12;
+            this.studentNameLabel.Text = "[NAME]";
             // 
-            // label4
+            // roomNoLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(623, 56);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 23);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "[XXX]";
+            this.roomNoLabel.AutoSize = true;
+            this.roomNoLabel.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roomNoLabel.Location = new System.Drawing.Point(623, 56);
+            this.roomNoLabel.Name = "roomNoLabel";
+            this.roomNoLabel.Size = new System.Drawing.Size(62, 23);
+            this.roomNoLabel.TabIndex = 14;
+            this.roomNoLabel.Text = "[XXX]";
             // 
             // label5
             // 
@@ -111,15 +111,15 @@
             this.label6.TabIndex = 15;
             this.label6.Text = "Request Type :";
             // 
-            // comboBox1
+            // requestTypeComboBox
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Lucida Bright", 12F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(173, 104);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(512, 31);
-            this.comboBox1.TabIndex = 16;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.requestTypeComboBox.Font = new System.Drawing.Font("Lucida Bright", 12F);
+            this.requestTypeComboBox.FormattingEnabled = true;
+            this.requestTypeComboBox.Location = new System.Drawing.Point(173, 104);
+            this.requestTypeComboBox.Name = "requestTypeComboBox";
+            this.requestTypeComboBox.Size = new System.Drawing.Size(512, 31);
+            this.requestTypeComboBox.TabIndex = 16;
+            this.requestTypeComboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -131,39 +131,39 @@
             this.label7.TabIndex = 17;
             this.label7.Text = "Description :";
             // 
-            // richTextBox1
+            // descriptionRiceTextBox
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(16, 196);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(669, 206);
-            this.richTextBox1.TabIndex = 18;
-            this.richTextBox1.Text = "";
+            this.descriptionRiceTextBox.Location = new System.Drawing.Point(16, 196);
+            this.descriptionRiceTextBox.Name = "descriptionRiceTextBox";
+            this.descriptionRiceTextBox.Size = new System.Drawing.Size(669, 206);
+            this.descriptionRiceTextBox.TabIndex = 18;
+            this.descriptionRiceTextBox.Text = "";
             // 
-            // refreshBTN
+            // submitRequestBTN
             // 
-            this.refreshBTN.BackColor = System.Drawing.SystemColors.Highlight;
-            this.refreshBTN.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.refreshBTN.ForeColor = System.Drawing.Color.White;
-            this.refreshBTN.Location = new System.Drawing.Point(491, 451);
-            this.refreshBTN.Name = "refreshBTN";
-            this.refreshBTN.Size = new System.Drawing.Size(194, 51);
-            this.refreshBTN.TabIndex = 23;
-            this.refreshBTN.Text = "Submit Request";
-            this.refreshBTN.UseVisualStyleBackColor = false;
+            this.submitRequestBTN.BackColor = System.Drawing.SystemColors.Highlight;
+            this.submitRequestBTN.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.submitRequestBTN.ForeColor = System.Drawing.Color.White;
+            this.submitRequestBTN.Location = new System.Drawing.Point(491, 451);
+            this.submitRequestBTN.Name = "submitRequestBTN";
+            this.submitRequestBTN.Size = new System.Drawing.Size(194, 51);
+            this.submitRequestBTN.TabIndex = 23;
+            this.submitRequestBTN.Text = "Submit Request";
+            this.submitRequestBTN.UseVisualStyleBackColor = false;
             // 
             // ServiceRequestForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(702, 538);
-            this.Controls.Add(this.refreshBTN);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.submitRequestBTN);
+            this.Controls.Add(this.descriptionRiceTextBox);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.requestTypeComboBox);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.roomNoLabel);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.studentNameLabel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -183,13 +183,13 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label studentNameLabel;
+        private System.Windows.Forms.Label roomNoLabel;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox requestTypeComboBox;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button refreshBTN;
+        private System.Windows.Forms.RichTextBox descriptionRiceTextBox;
+        private System.Windows.Forms.Button submitRequestBTN;
     }
 }

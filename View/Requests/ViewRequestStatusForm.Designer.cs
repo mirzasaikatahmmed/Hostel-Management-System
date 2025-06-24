@@ -31,11 +31,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.statusComboBox = new System.Windows.Forms.ComboBox();
             this.refreshBTN = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.viewRequestFormDataGridView = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewRequestFormDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -67,14 +67,14 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Filter by Status :";
             // 
-            // comboBox1
+            // statusComboBox
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Lucida Bright", 12F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(187, 63);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(288, 31);
-            this.comboBox1.TabIndex = 12;
+            this.statusComboBox.Font = new System.Drawing.Font("Lucida Bright", 12F);
+            this.statusComboBox.FormattingEnabled = true;
+            this.statusComboBox.Location = new System.Drawing.Point(187, 58);
+            this.statusComboBox.Name = "statusComboBox";
+            this.statusComboBox.Size = new System.Drawing.Size(288, 31);
+            this.statusComboBox.TabIndex = 12;
             // 
             // refreshBTN
             // 
@@ -88,24 +88,24 @@
             this.refreshBTN.Text = "Refresh";
             this.refreshBTN.UseVisualStyleBackColor = false;
             // 
-            // dataGridView1
+            // viewRequestFormDataGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 142);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(674, 384);
-            this.dataGridView1.TabIndex = 24;
+            this.viewRequestFormDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.viewRequestFormDataGridView.Location = new System.Drawing.Point(16, 142);
+            this.viewRequestFormDataGridView.Name = "viewRequestFormDataGridView";
+            this.viewRequestFormDataGridView.RowHeadersWidth = 51;
+            this.viewRequestFormDataGridView.RowTemplate.Height = 24;
+            this.viewRequestFormDataGridView.Size = new System.Drawing.Size(674, 384);
+            this.viewRequestFormDataGridView.TabIndex = 24;
             // 
             // ViewRequestStatusForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(702, 538);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.viewRequestFormDataGridView);
             this.Controls.Add(this.refreshBTN);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.statusComboBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -114,7 +114,7 @@
             this.Text = "ViewRequestStatusForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewRequestFormDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -125,8 +125,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox statusComboBox;
         private System.Windows.Forms.Button refreshBTN;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView viewRequestFormDataGridView;
     }
 }

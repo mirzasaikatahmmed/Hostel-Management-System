@@ -32,17 +32,17 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.roomNoTextBox = new System.Windows.Forms.TextBox();
+            this.electricityTextBox = new System.Windows.Forms.TextBox();
+            this.gasTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.waterTextBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.statusComboBox = new System.Windows.Forms.ComboBox();
+            this.saveBTN = new System.Windows.Forms.Button();
+            this.monthDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,37 +85,29 @@
             this.label5.TabIndex = 13;
             this.label5.Text = "Month              :";
             // 
-            // textBox1
+            // roomNoTextBox
             // 
-            this.textBox1.Font = new System.Drawing.Font("Lucida Bright", 12F);
-            this.textBox1.Location = new System.Drawing.Point(189, 110);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(97, 31);
-            this.textBox1.TabIndex = 14;
+            this.roomNoTextBox.Font = new System.Drawing.Font("Lucida Bright", 12F);
+            this.roomNoTextBox.Location = new System.Drawing.Point(189, 59);
+            this.roomNoTextBox.Name = "roomNoTextBox";
+            this.roomNoTextBox.Size = new System.Drawing.Size(97, 31);
+            this.roomNoTextBox.TabIndex = 15;
             // 
-            // textBox2
+            // electricityTextBox
             // 
-            this.textBox2.Font = new System.Drawing.Font("Lucida Bright", 12F);
-            this.textBox2.Location = new System.Drawing.Point(189, 59);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(97, 31);
-            this.textBox2.TabIndex = 15;
+            this.electricityTextBox.Font = new System.Drawing.Font("Lucida Bright", 12F);
+            this.electricityTextBox.Location = new System.Drawing.Point(526, 59);
+            this.electricityTextBox.Name = "electricityTextBox";
+            this.electricityTextBox.Size = new System.Drawing.Size(97, 31);
+            this.electricityTextBox.TabIndex = 19;
             // 
-            // textBox3
+            // gasTextBox
             // 
-            this.textBox3.Font = new System.Drawing.Font("Lucida Bright", 12F);
-            this.textBox3.Location = new System.Drawing.Point(526, 59);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(97, 31);
-            this.textBox3.TabIndex = 19;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Font = new System.Drawing.Font("Lucida Bright", 12F);
-            this.textBox4.Location = new System.Drawing.Point(526, 110);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(97, 31);
-            this.textBox4.TabIndex = 18;
+            this.gasTextBox.Font = new System.Drawing.Font("Lucida Bright", 12F);
+            this.gasTextBox.Location = new System.Drawing.Point(526, 110);
+            this.gasTextBox.Name = "gasTextBox";
+            this.gasTextBox.Size = new System.Drawing.Size(97, 31);
+            this.gasTextBox.TabIndex = 18;
             // 
             // label3
             // 
@@ -137,13 +129,13 @@
             this.label4.TabIndex = 16;
             this.label4.Text = "Electricity :";
             // 
-            // textBox5
+            // waterTextBox
             // 
-            this.textBox5.Font = new System.Drawing.Font("Lucida Bright", 12F);
-            this.textBox5.Location = new System.Drawing.Point(526, 165);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(97, 31);
-            this.textBox5.TabIndex = 21;
+            this.waterTextBox.Font = new System.Drawing.Font("Lucida Bright", 12F);
+            this.waterTextBox.Location = new System.Drawing.Point(526, 165);
+            this.waterTextBox.Name = "waterTextBox";
+            this.waterTextBox.Size = new System.Drawing.Size(97, 31);
+            this.waterTextBox.TabIndex = 21;
             // 
             // label6
             // 
@@ -165,43 +157,52 @@
             this.label7.TabIndex = 22;
             this.label7.Text = "Status              :";
             // 
-            // comboBox1
+            // statusComboBox
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Lucida Bright", 12F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(189, 239);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 31);
-            this.comboBox1.TabIndex = 23;
+            this.statusComboBox.Font = new System.Drawing.Font("Lucida Bright", 12F);
+            this.statusComboBox.FormattingEnabled = true;
+            this.statusComboBox.Location = new System.Drawing.Point(189, 239);
+            this.statusComboBox.Name = "statusComboBox";
+            this.statusComboBox.Size = new System.Drawing.Size(121, 31);
+            this.statusComboBox.TabIndex = 23;
             // 
-            // button2
+            // saveBTN
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button2.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(429, 228);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(194, 51);
-            this.button2.TabIndex = 24;
-            this.button2.Text = "Save";
-            this.button2.UseVisualStyleBackColor = false;
+            this.saveBTN.BackColor = System.Drawing.SystemColors.Highlight;
+            this.saveBTN.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.saveBTN.ForeColor = System.Drawing.Color.White;
+            this.saveBTN.Location = new System.Drawing.Point(429, 228);
+            this.saveBTN.Name = "saveBTN";
+            this.saveBTN.Size = new System.Drawing.Size(194, 51);
+            this.saveBTN.TabIndex = 24;
+            this.saveBTN.Text = "Save";
+            this.saveBTN.UseVisualStyleBackColor = false;
+            // 
+            // monthDateTimePicker
+            // 
+            this.monthDateTimePicker.Font = new System.Drawing.Font("Lucida Bright", 12F);
+            this.monthDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.monthDateTimePicker.Location = new System.Drawing.Point(189, 107);
+            this.monthDateTimePicker.Name = "monthDateTimePicker";
+            this.monthDateTimePicker.Size = new System.Drawing.Size(138, 31);
+            this.monthDateTimePicker.TabIndex = 25;
             // 
             // UtilityBillListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(702, 538);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.monthDateTimePicker);
+            this.Controls.Add(this.saveBTN);
+            this.Controls.Add(this.statusComboBox);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.waterTextBox);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.electricityTextBox);
+            this.Controls.Add(this.gasTextBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.roomNoTextBox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
@@ -222,16 +223,16 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox roomNoTextBox;
+        private System.Windows.Forms.TextBox electricityTextBox;
+        private System.Windows.Forms.TextBox gasTextBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox waterTextBox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox statusComboBox;
+        private System.Windows.Forms.Button saveBTN;
+        private System.Windows.Forms.DateTimePicker monthDateTimePicker;
     }
 }

@@ -31,17 +31,17 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.roomNoTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.monthDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.updateStudentBTN = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
+            this.statusComboBox = new System.Windows.Forms.ComboBox();
+            this.searchBTN = new System.Windows.Forms.Button();
+            this.refreshBTN = new System.Windows.Forms.Button();
+            this.updateBillStatusFormDataGridView = new System.Windows.Forms.DataGridView();
+            this.updateStatusBTN = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updateBillStatusFormDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -73,13 +73,13 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Room :";
             // 
-            // textBox1
+            // roomNoTextBox
             // 
-            this.textBox1.Font = new System.Drawing.Font("Lucida Bright", 12F);
-            this.textBox1.Location = new System.Drawing.Point(97, 53);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 31);
-            this.textBox1.TabIndex = 12;
+            this.roomNoTextBox.Font = new System.Drawing.Font("Lucida Bright", 12F);
+            this.roomNoTextBox.Location = new System.Drawing.Point(97, 53);
+            this.roomNoTextBox.Name = "roomNoTextBox";
+            this.roomNoTextBox.Size = new System.Drawing.Size(100, 31);
+            this.roomNoTextBox.TabIndex = 12;
             // 
             // label3
             // 
@@ -91,14 +91,14 @@
             this.label3.TabIndex = 13;
             this.label3.Text = "Month :";
             // 
-            // dateTimePicker1
+            // monthDateTimePicker
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Lucida Bright", 12F);
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(295, 53);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 31);
-            this.dateTimePicker1.TabIndex = 14;
+            this.monthDateTimePicker.Font = new System.Drawing.Font("Lucida Bright", 12F);
+            this.monthDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.monthDateTimePicker.Location = new System.Drawing.Point(295, 53);
+            this.monthDateTimePicker.Name = "monthDateTimePicker";
+            this.monthDateTimePicker.Size = new System.Drawing.Size(200, 31);
+            this.monthDateTimePicker.TabIndex = 14;
             // 
             // label4
             // 
@@ -110,75 +110,79 @@
             this.label4.TabIndex = 15;
             this.label4.Text = "Status :";
             // 
-            // comboBox1
+            // statusComboBox
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Lucida Bright", 12F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(581, 53);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(97, 31);
-            this.comboBox1.TabIndex = 16;
+            this.statusComboBox.Font = new System.Drawing.Font("Lucida Bright", 12F);
+            this.statusComboBox.FormattingEnabled = true;
+            this.statusComboBox.Location = new System.Drawing.Point(581, 53);
+            this.statusComboBox.Name = "statusComboBox";
+            this.statusComboBox.Size = new System.Drawing.Size(97, 31);
+            this.statusComboBox.TabIndex = 16;
+            this.statusComboBox.SelectedIndexChanged += new System.EventHandler(this.statusComboBox_SelectedIndexChanged);
             // 
-            // updateStudentBTN
+            // searchBTN
             // 
-            this.updateStudentBTN.BackColor = System.Drawing.SystemColors.Highlight;
-            this.updateStudentBTN.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updateStudentBTN.ForeColor = System.Drawing.Color.White;
-            this.updateStudentBTN.Location = new System.Drawing.Point(283, 104);
-            this.updateStudentBTN.Name = "updateStudentBTN";
-            this.updateStudentBTN.Size = new System.Drawing.Size(194, 51);
-            this.updateStudentBTN.TabIndex = 17;
-            this.updateStudentBTN.Text = "Search";
-            this.updateStudentBTN.UseVisualStyleBackColor = false;
+            this.searchBTN.BackColor = System.Drawing.SystemColors.Highlight;
+            this.searchBTN.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchBTN.ForeColor = System.Drawing.Color.White;
+            this.searchBTN.Location = new System.Drawing.Point(283, 104);
+            this.searchBTN.Name = "searchBTN";
+            this.searchBTN.Size = new System.Drawing.Size(194, 51);
+            this.searchBTN.TabIndex = 17;
+            this.searchBTN.Text = "Search";
+            this.searchBTN.UseVisualStyleBackColor = false;
+            this.searchBTN.Click += new System.EventHandler(this.searchBTN_Click);
             // 
-            // button1
+            // refreshBTN
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button1.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(483, 104);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(194, 51);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "Refresh";
-            this.button1.UseVisualStyleBackColor = false;
+            this.refreshBTN.BackColor = System.Drawing.SystemColors.Highlight;
+            this.refreshBTN.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.refreshBTN.ForeColor = System.Drawing.Color.White;
+            this.refreshBTN.Location = new System.Drawing.Point(483, 104);
+            this.refreshBTN.Name = "refreshBTN";
+            this.refreshBTN.Size = new System.Drawing.Size(194, 51);
+            this.refreshBTN.TabIndex = 18;
+            this.refreshBTN.Text = "Refresh";
+            this.refreshBTN.UseVisualStyleBackColor = false;
+            this.refreshBTN.Click += new System.EventHandler(this.refreshBTN_Click);
             // 
-            // dataGridView1
+            // updateBillStatusFormDataGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 178);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(678, 275);
-            this.dataGridView1.TabIndex = 19;
+            this.updateBillStatusFormDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.updateBillStatusFormDataGridView.Location = new System.Drawing.Point(12, 178);
+            this.updateBillStatusFormDataGridView.Name = "updateBillStatusFormDataGridView";
+            this.updateBillStatusFormDataGridView.RowHeadersWidth = 51;
+            this.updateBillStatusFormDataGridView.RowTemplate.Height = 24;
+            this.updateBillStatusFormDataGridView.Size = new System.Drawing.Size(678, 275);
+            this.updateBillStatusFormDataGridView.TabIndex = 19;
             // 
-            // button2
+            // updateStatusBTN
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button2.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(496, 465);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(194, 51);
-            this.button2.TabIndex = 20;
-            this.button2.Text = "Update Status";
-            this.button2.UseVisualStyleBackColor = false;
+            this.updateStatusBTN.BackColor = System.Drawing.SystemColors.Highlight;
+            this.updateStatusBTN.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateStatusBTN.ForeColor = System.Drawing.Color.White;
+            this.updateStatusBTN.Location = new System.Drawing.Point(496, 465);
+            this.updateStatusBTN.Name = "updateStatusBTN";
+            this.updateStatusBTN.Size = new System.Drawing.Size(194, 51);
+            this.updateStatusBTN.TabIndex = 20;
+            this.updateStatusBTN.Text = "Update Status";
+            this.updateStatusBTN.UseVisualStyleBackColor = false;
+            this.updateStatusBTN.Click += new System.EventHandler(this.updateStatusBTN_Click);
             // 
             // UpdateBillStatusForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(702, 538);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.updateStudentBTN);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.updateStatusBTN);
+            this.Controls.Add(this.updateBillStatusFormDataGridView);
+            this.Controls.Add(this.refreshBTN);
+            this.Controls.Add(this.searchBTN);
+            this.Controls.Add(this.statusComboBox);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.monthDateTimePicker);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.roomNoTextBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -187,7 +191,7 @@
             this.Text = "UpdateBillStatusForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updateBillStatusFormDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -198,14 +202,14 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox roomNoTextBox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker monthDateTimePicker;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button updateStudentBTN;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox statusComboBox;
+        private System.Windows.Forms.Button searchBTN;
+        private System.Windows.Forms.Button refreshBTN;
+        private System.Windows.Forms.DataGridView updateBillStatusFormDataGridView;
+        private System.Windows.Forms.Button updateStatusBTN;
     }
 }

@@ -31,14 +31,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.studentNameComboBox = new System.Windows.Forms.ComboBox();
+            this.roomComboBox = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.startDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.endDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
+            this.assignRoomBTN = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,23 +71,23 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Student Name       :";
             // 
-            // comboBox1
+            // studentNameComboBox
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Lucida Bright", 12F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(216, 55);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(474, 31);
-            this.comboBox1.TabIndex = 12;
+            this.studentNameComboBox.Font = new System.Drawing.Font("Lucida Bright", 12F);
+            this.studentNameComboBox.FormattingEnabled = true;
+            this.studentNameComboBox.Location = new System.Drawing.Point(216, 55);
+            this.studentNameComboBox.Name = "studentNameComboBox";
+            this.studentNameComboBox.Size = new System.Drawing.Size(474, 31);
+            this.studentNameComboBox.TabIndex = 12;
             // 
-            // comboBox2
+            // roomComboBox
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Lucida Bright", 12F);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(216, 107);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(474, 31);
-            this.comboBox2.TabIndex = 14;
+            this.roomComboBox.Font = new System.Drawing.Font("Lucida Bright", 12F);
+            this.roomComboBox.FormattingEnabled = true;
+            this.roomComboBox.Location = new System.Drawing.Point(216, 107);
+            this.roomComboBox.Name = "roomComboBox";
+            this.roomComboBox.Size = new System.Drawing.Size(474, 31);
+            this.roomComboBox.TabIndex = 14;
             // 
             // label3
             // 
@@ -109,21 +109,21 @@
             this.label4.TabIndex = 15;
             this.label4.Text = "Start Date         :";
             // 
-            // dateTimePicker1
+            // startDateTimePicker
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Lucida Bright", 12F);
-            this.dateTimePicker1.Location = new System.Drawing.Point(216, 161);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(474, 31);
-            this.dateTimePicker1.TabIndex = 16;
+            this.startDateTimePicker.Font = new System.Drawing.Font("Lucida Bright", 12F);
+            this.startDateTimePicker.Location = new System.Drawing.Point(216, 161);
+            this.startDateTimePicker.Name = "startDateTimePicker";
+            this.startDateTimePicker.Size = new System.Drawing.Size(474, 31);
+            this.startDateTimePicker.TabIndex = 16;
             // 
-            // dateTimePicker2
+            // endDateTimePicker
             // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Lucida Bright", 12F);
-            this.dateTimePicker2.Location = new System.Drawing.Point(216, 212);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(474, 31);
-            this.dateTimePicker2.TabIndex = 18;
+            this.endDateTimePicker.Font = new System.Drawing.Font("Lucida Bright", 12F);
+            this.endDateTimePicker.Location = new System.Drawing.Point(216, 212);
+            this.endDateTimePicker.Name = "endDateTimePicker";
+            this.endDateTimePicker.Size = new System.Drawing.Size(474, 31);
+            this.endDateTimePicker.TabIndex = 18;
             // 
             // label5
             // 
@@ -135,31 +135,31 @@
             this.label5.TabIndex = 17;
             this.label5.Text = "End Date           :";
             // 
-            // button4
+            // assignRoomBTN
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button4.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(496, 273);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(194, 51);
-            this.button4.TabIndex = 28;
-            this.button4.Text = "Assign Room";
-            this.button4.UseVisualStyleBackColor = false;
+            this.assignRoomBTN.BackColor = System.Drawing.SystemColors.Highlight;
+            this.assignRoomBTN.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assignRoomBTN.ForeColor = System.Drawing.Color.White;
+            this.assignRoomBTN.Location = new System.Drawing.Point(496, 273);
+            this.assignRoomBTN.Name = "assignRoomBTN";
+            this.assignRoomBTN.Size = new System.Drawing.Size(194, 51);
+            this.assignRoomBTN.TabIndex = 28;
+            this.assignRoomBTN.Text = "Assign Room";
+            this.assignRoomBTN.UseVisualStyleBackColor = false;
             // 
             // AssignRoomForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(702, 538);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.assignRoomBTN);
+            this.Controls.Add(this.endDateTimePicker);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.startDateTimePicker);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.roomComboBox);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.studentNameComboBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -178,13 +178,13 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox studentNameComboBox;
+        private System.Windows.Forms.ComboBox roomComboBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker startDateTimePicker;
+        private System.Windows.Forms.DateTimePicker endDateTimePicker;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button assignRoomBTN;
     }
 }

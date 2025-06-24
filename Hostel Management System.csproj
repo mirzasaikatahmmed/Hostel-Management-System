@@ -165,9 +165,11 @@
     <Compile Include="Controller\StaffController.cs" />
     <Compile Include="Controller\StudentController.cs" />
     <Compile Include="Controller\UserController.cs" />
+    <Compile Include="Controller\UtilityBillController.cs" />
     <Compile Include="Model\StaffModel.cs" />
     <Compile Include="Model\StudentModel.cs" />
     <Compile Include="Model\UserModel.cs" />
+    <Compile Include="Model\UtilityBillModel.cs" />
     <Compile Include="View\Bills\UpdateBillStatusForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -223,6 +225,12 @@
     </Compile>
     <Compile Include="View\Requests\ViewRequestStatusForm.Designer.cs">
       <DependentUpon>ViewRequestStatusForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Rooms\AddRoomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Rooms\AddRoomForm.Designer.cs">
+      <DependentUpon>AddRoomForm.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Rooms\AssignRoomForm.cs">
       <SubType>Form</SubType>
@@ -299,6 +307,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Requests\ViewRequestStatusForm.resx">
       <DependentUpon>ViewRequestStatusForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Rooms\AddRoomForm.resx">
+      <DependentUpon>AddRoomForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Rooms\AssignRoomForm.resx">
       <DependentUpon>AssignRoomForm.cs</DependentUpon>

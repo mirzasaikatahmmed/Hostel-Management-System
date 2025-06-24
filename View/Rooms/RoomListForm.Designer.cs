@@ -31,15 +31,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.roomNoTextBox = new System.Windows.Forms.TextBox();
             this.refreshBTN = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.searchBTN = new System.Windows.Forms.Button();
+            this.addRoomBTN = new System.Windows.Forms.Button();
+            this.updateRoomBTN = new System.Windows.Forms.Button();
+            this.deleteRoomBTN = new System.Windows.Forms.Button();
+            this.roomListFormDataGridView = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roomListFormDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -73,13 +73,13 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Search Room:";
             // 
-            // textBox1
+            // roomNoTextBox
             // 
-            this.textBox1.Font = new System.Drawing.Font("Lucida Bright", 12F);
-            this.textBox1.Location = new System.Drawing.Point(162, 58);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(162, 31);
-            this.textBox1.TabIndex = 12;
+            this.roomNoTextBox.Font = new System.Drawing.Font("Lucida Bright", 12F);
+            this.roomNoTextBox.Location = new System.Drawing.Point(162, 58);
+            this.roomNoTextBox.Name = "roomNoTextBox";
+            this.roomNoTextBox.Size = new System.Drawing.Size(162, 31);
+            this.roomNoTextBox.TabIndex = 12;
             // 
             // refreshBTN
             // 
@@ -93,76 +93,76 @@
             this.refreshBTN.Text = "Refresh";
             this.refreshBTN.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // searchBTN
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button1.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(330, 52);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 41);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "Search";
-            this.button1.UseVisualStyleBackColor = false;
+            this.searchBTN.BackColor = System.Drawing.SystemColors.Highlight;
+            this.searchBTN.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchBTN.ForeColor = System.Drawing.Color.White;
+            this.searchBTN.Location = new System.Drawing.Point(330, 52);
+            this.searchBTN.Name = "searchBTN";
+            this.searchBTN.Size = new System.Drawing.Size(125, 41);
+            this.searchBTN.TabIndex = 24;
+            this.searchBTN.Text = "Search";
+            this.searchBTN.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // addRoomBTN
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button2.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(33, 124);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(194, 51);
-            this.button2.TabIndex = 25;
-            this.button2.Text = "Add Room";
-            this.button2.UseVisualStyleBackColor = false;
+            this.addRoomBTN.BackColor = System.Drawing.SystemColors.Highlight;
+            this.addRoomBTN.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addRoomBTN.ForeColor = System.Drawing.Color.White;
+            this.addRoomBTN.Location = new System.Drawing.Point(33, 124);
+            this.addRoomBTN.Name = "addRoomBTN";
+            this.addRoomBTN.Size = new System.Drawing.Size(194, 51);
+            this.addRoomBTN.TabIndex = 25;
+            this.addRoomBTN.Text = "Add Room";
+            this.addRoomBTN.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // updateRoomBTN
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button3.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(262, 124);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(194, 51);
-            this.button3.TabIndex = 26;
-            this.button3.Text = "Update Room";
-            this.button3.UseVisualStyleBackColor = false;
+            this.updateRoomBTN.BackColor = System.Drawing.SystemColors.Highlight;
+            this.updateRoomBTN.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateRoomBTN.ForeColor = System.Drawing.Color.White;
+            this.updateRoomBTN.Location = new System.Drawing.Point(262, 124);
+            this.updateRoomBTN.Name = "updateRoomBTN";
+            this.updateRoomBTN.Size = new System.Drawing.Size(194, 51);
+            this.updateRoomBTN.TabIndex = 26;
+            this.updateRoomBTN.Text = "Update Room";
+            this.updateRoomBTN.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // deleteRoomBTN
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button4.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(481, 124);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(194, 51);
-            this.button4.TabIndex = 27;
-            this.button4.Text = "Delete";
-            this.button4.UseVisualStyleBackColor = false;
+            this.deleteRoomBTN.BackColor = System.Drawing.SystemColors.Highlight;
+            this.deleteRoomBTN.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteRoomBTN.ForeColor = System.Drawing.Color.White;
+            this.deleteRoomBTN.Location = new System.Drawing.Point(481, 124);
+            this.deleteRoomBTN.Name = "deleteRoomBTN";
+            this.deleteRoomBTN.Size = new System.Drawing.Size(194, 51);
+            this.deleteRoomBTN.TabIndex = 27;
+            this.deleteRoomBTN.Text = "Delete";
+            this.deleteRoomBTN.UseVisualStyleBackColor = false;
             // 
-            // dataGridView1
+            // roomListFormDataGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 203);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(674, 323);
-            this.dataGridView1.TabIndex = 28;
+            this.roomListFormDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.roomListFormDataGridView.Location = new System.Drawing.Point(16, 203);
+            this.roomListFormDataGridView.Name = "roomListFormDataGridView";
+            this.roomListFormDataGridView.RowHeadersWidth = 51;
+            this.roomListFormDataGridView.RowTemplate.Height = 24;
+            this.roomListFormDataGridView.Size = new System.Drawing.Size(674, 323);
+            this.roomListFormDataGridView.TabIndex = 28;
             // 
             // RoomListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(702, 538);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.roomListFormDataGridView);
+            this.Controls.Add(this.deleteRoomBTN);
+            this.Controls.Add(this.updateRoomBTN);
+            this.Controls.Add(this.addRoomBTN);
+            this.Controls.Add(this.searchBTN);
             this.Controls.Add(this.refreshBTN);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.roomNoTextBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -171,7 +171,7 @@
             this.Text = "RoomListForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roomListFormDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -182,12 +182,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox roomNoTextBox;
         private System.Windows.Forms.Button refreshBTN;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button searchBTN;
+        private System.Windows.Forms.Button addRoomBTN;
+        private System.Windows.Forms.Button updateRoomBTN;
+        private System.Windows.Forms.Button deleteRoomBTN;
+        private System.Windows.Forms.DataGridView roomListFormDataGridView;
     }
 }
