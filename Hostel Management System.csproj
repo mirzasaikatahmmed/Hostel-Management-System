@@ -162,10 +162,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\AuthController.cs" />
+    <Compile Include="Controller\ServiceRequestController.cs" />
     <Compile Include="Controller\StaffController.cs" />
     <Compile Include="Controller\StudentController.cs" />
     <Compile Include="Controller\UserController.cs" />
     <Compile Include="Controller\UtilityBillController.cs" />
+    <Compile Include="Model\ServiceRequestModel.cs" />
     <Compile Include="Model\StaffModel.cs" />
     <Compile Include="Model\StudentModel.cs" />
     <Compile Include="Model\UserModel.cs" />
