@@ -308,6 +308,9 @@
     <EmbeddedResource Include="View\Dashboard\StaffDashboard.resx">
       <DependentUpon>StaffDashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\Dashboard\StudentDashboard.resx">
+      <DependentUpon>StudentDashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Requests\ServiceRequestForm.resx">
       <DependentUpon>ServiceRequestForm.cs</DependentUpon>
     </EmbeddedResource>
