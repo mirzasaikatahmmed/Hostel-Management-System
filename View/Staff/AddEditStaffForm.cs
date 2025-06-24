@@ -62,7 +62,8 @@ namespace Hostel_Management_System.Staff
                 Name = name,
                 Phone = phone,
                 Email = email,
-                Password = password
+                Password = password,
+                Role = "Staff"
             };
 
             bool success;

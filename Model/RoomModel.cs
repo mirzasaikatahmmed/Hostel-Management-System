@@ -125,5 +125,26 @@ namespace Hostel_Management_System.Model
                 }
             }
         }
+        public static bool DeleteRoom(int roomID)
+        {
+            using (SqlConnection con = new SqlConnection(cs))
+            {
+                string query = "DELETE FROM Rooms WHERE RoomID = @RoomID";
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@RoomID", roomID);
+
+                try
+                {
+                    con.Open();
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    return rowsAffected > 0;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error deleting room: {ex.Message}");
+                    return false;
+                }
+            }
+        }
     }
 }

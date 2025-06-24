@@ -29,8 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.logoutPictureBox = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.sidebarPanel = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.utilityBillBTN = new System.Windows.Forms.Button();
             this.allServicesBTN = new System.Windows.Forms.Button();
             this.assignRoomBTN = new System.Windows.Forms.Button();
@@ -41,13 +43,11 @@
             this.dashboardPanel = new System.Windows.Forms.Panel();
             this.userNameLabel = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.logoutPictureBox = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            this.sidebarPanel.SuspendLayout();
-            this.dashboardPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).BeginInit();
+            this.sidebarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.dashboardPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -59,6 +59,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(950, 42);
             this.panel1.TabIndex = 0;
+            // 
+            // logoutPictureBox
+            // 
+            this.logoutPictureBox.Image = global::Hostel_Management_System.Properties.Resources.icons8_logout_100;
+            this.logoutPictureBox.Location = new System.Drawing.Point(915, 3);
+            this.logoutPictureBox.Name = "logoutPictureBox";
+            this.logoutPictureBox.Size = new System.Drawing.Size(35, 35);
+            this.logoutPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.logoutPictureBox.TabIndex = 10;
+            this.logoutPictureBox.TabStop = false;
+            this.logoutPictureBox.Click += new System.EventHandler(this.logoutPictureBox_Click);
             // 
             // label2
             // 
@@ -86,6 +97,16 @@
             this.sidebarPanel.Size = new System.Drawing.Size(248, 538);
             this.sidebarPanel.TabIndex = 1;
             this.sidebarPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.sidebarPanel_Paint);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Hostel_Management_System.Properties.Resources.icons8_hostel_100;
+            this.pictureBox2.Location = new System.Drawing.Point(80, 22);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(70, 70);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 18;
+            this.pictureBox2.TabStop = false;
             // 
             // utilityBillBTN
             // 
@@ -208,27 +229,6 @@
             this.label3.Text = "Welcome,";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // logoutPictureBox
-            // 
-            this.logoutPictureBox.Image = global::Hostel_Management_System.Properties.Resources.icons8_logout_100;
-            this.logoutPictureBox.Location = new System.Drawing.Point(915, 3);
-            this.logoutPictureBox.Name = "logoutPictureBox";
-            this.logoutPictureBox.Size = new System.Drawing.Size(35, 35);
-            this.logoutPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.logoutPictureBox.TabIndex = 10;
-            this.logoutPictureBox.TabStop = false;
-            this.logoutPictureBox.Click += new System.EventHandler(this.logoutPictureBox_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Hostel_Management_System.Properties.Resources.icons8_hostel_100;
-            this.pictureBox2.Location = new System.Drawing.Point(80, 22);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(70, 70);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 18;
-            this.pictureBox2.TabStop = false;
-            // 
             // AdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -243,12 +243,12 @@
             this.Text = "AdminDashboard";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).EndInit();
             this.sidebarPanel.ResumeLayout(false);
             this.sidebarPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.dashboardPanel.ResumeLayout(false);
             this.dashboardPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

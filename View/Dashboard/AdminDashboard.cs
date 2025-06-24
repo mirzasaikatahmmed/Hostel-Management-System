@@ -69,12 +69,12 @@ namespace Hostel_Management_System.Dashboard
 
         private void assignRoomBTN_Click(object sender, EventArgs e)
         {
-            LoadFormInPanel(new Rooms.AssignRoomForm());
+            LoadFormInPanel(new Rooms.RoomListForm());
         }
 
         private void allServicesBTN_Click(object sender, EventArgs e)
         {
-
+            LoadFormInPanel(new Requests.ViewRequestStatusForm());
         }
 
         private void utilityBillBTN_Click(object sender, EventArgs e)

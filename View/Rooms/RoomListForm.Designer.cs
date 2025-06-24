@@ -38,6 +38,7 @@
             this.updateRoomBTN = new System.Windows.Forms.Button();
             this.deleteRoomBTN = new System.Windows.Forms.Button();
             this.roomListFormDataGridView = new System.Windows.Forms.DataGridView();
+            this.assignRoomBTN = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.roomListFormDataGridView)).BeginInit();
             this.SuspendLayout();
@@ -92,6 +93,7 @@
             this.refreshBTN.TabIndex = 23;
             this.refreshBTN.Text = "Refresh";
             this.refreshBTN.UseVisualStyleBackColor = false;
+            this.refreshBTN.Click += new System.EventHandler(this.refreshBTN_Click);
             // 
             // searchBTN
             // 
@@ -104,42 +106,46 @@
             this.searchBTN.TabIndex = 24;
             this.searchBTN.Text = "Search";
             this.searchBTN.UseVisualStyleBackColor = false;
+            this.searchBTN.Click += new System.EventHandler(this.searchBTN_Click);
             // 
             // addRoomBTN
             // 
             this.addRoomBTN.BackColor = System.Drawing.SystemColors.Highlight;
             this.addRoomBTN.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addRoomBTN.ForeColor = System.Drawing.Color.White;
-            this.addRoomBTN.Location = new System.Drawing.Point(33, 124);
+            this.addRoomBTN.Location = new System.Drawing.Point(29, 126);
             this.addRoomBTN.Name = "addRoomBTN";
-            this.addRoomBTN.Size = new System.Drawing.Size(194, 51);
+            this.addRoomBTN.Size = new System.Drawing.Size(173, 51);
             this.addRoomBTN.TabIndex = 25;
             this.addRoomBTN.Text = "Add Room";
             this.addRoomBTN.UseVisualStyleBackColor = false;
+            this.addRoomBTN.Click += new System.EventHandler(this.addRoomBTN_Click);
             // 
             // updateRoomBTN
             // 
             this.updateRoomBTN.BackColor = System.Drawing.SystemColors.Highlight;
             this.updateRoomBTN.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updateRoomBTN.ForeColor = System.Drawing.Color.White;
-            this.updateRoomBTN.Location = new System.Drawing.Point(262, 124);
+            this.updateRoomBTN.Location = new System.Drawing.Point(208, 126);
             this.updateRoomBTN.Name = "updateRoomBTN";
-            this.updateRoomBTN.Size = new System.Drawing.Size(194, 51);
+            this.updateRoomBTN.Size = new System.Drawing.Size(173, 51);
             this.updateRoomBTN.TabIndex = 26;
             this.updateRoomBTN.Text = "Update Room";
             this.updateRoomBTN.UseVisualStyleBackColor = false;
+            this.updateRoomBTN.Click += new System.EventHandler(this.updateRoomBTN_Click);
             // 
             // deleteRoomBTN
             // 
             this.deleteRoomBTN.BackColor = System.Drawing.SystemColors.Highlight;
             this.deleteRoomBTN.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deleteRoomBTN.ForeColor = System.Drawing.Color.White;
-            this.deleteRoomBTN.Location = new System.Drawing.Point(481, 124);
+            this.deleteRoomBTN.Location = new System.Drawing.Point(387, 126);
             this.deleteRoomBTN.Name = "deleteRoomBTN";
-            this.deleteRoomBTN.Size = new System.Drawing.Size(194, 51);
+            this.deleteRoomBTN.Size = new System.Drawing.Size(141, 51);
             this.deleteRoomBTN.TabIndex = 27;
             this.deleteRoomBTN.Text = "Delete";
             this.deleteRoomBTN.UseVisualStyleBackColor = false;
+            this.deleteRoomBTN.Click += new System.EventHandler(this.deleteRoomBTN_Click);
             // 
             // roomListFormDataGridView
             // 
@@ -151,11 +157,25 @@
             this.roomListFormDataGridView.Size = new System.Drawing.Size(674, 323);
             this.roomListFormDataGridView.TabIndex = 28;
             // 
+            // assignRoomBTN
+            // 
+            this.assignRoomBTN.BackColor = System.Drawing.SystemColors.Highlight;
+            this.assignRoomBTN.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assignRoomBTN.ForeColor = System.Drawing.Color.White;
+            this.assignRoomBTN.Location = new System.Drawing.Point(534, 126);
+            this.assignRoomBTN.Name = "assignRoomBTN";
+            this.assignRoomBTN.Size = new System.Drawing.Size(141, 51);
+            this.assignRoomBTN.TabIndex = 29;
+            this.assignRoomBTN.Text = "Assign";
+            this.assignRoomBTN.UseVisualStyleBackColor = false;
+            this.assignRoomBTN.Click += new System.EventHandler(this.assignRoomBTN_Click);
+            // 
             // RoomListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(702, 538);
+            this.Controls.Add(this.assignRoomBTN);
             this.Controls.Add(this.roomListFormDataGridView);
             this.Controls.Add(this.deleteRoomBTN);
             this.Controls.Add(this.updateRoomBTN);
@@ -189,5 +209,6 @@
         private System.Windows.Forms.Button updateRoomBTN;
         private System.Windows.Forms.Button deleteRoomBTN;
         private System.Windows.Forms.DataGridView roomListFormDataGridView;
+        private System.Windows.Forms.Button assignRoomBTN;
     }
 }

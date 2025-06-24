@@ -79,6 +79,7 @@
             this.studentNameComboBox.Name = "studentNameComboBox";
             this.studentNameComboBox.Size = new System.Drawing.Size(474, 31);
             this.studentNameComboBox.TabIndex = 12;
+            this.studentNameComboBox.SelectedIndexChanged += new System.EventHandler(this.studentNameComboBox_SelectedIndexChanged);
             // 
             // roomComboBox
             // 
@@ -88,6 +89,7 @@
             this.roomComboBox.Name = "roomComboBox";
             this.roomComboBox.Size = new System.Drawing.Size(474, 31);
             this.roomComboBox.TabIndex = 14;
+            this.roomComboBox.SelectedIndexChanged += new System.EventHandler(this.roomComboBox_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -146,6 +148,7 @@
             this.assignRoomBTN.TabIndex = 28;
             this.assignRoomBTN.Text = "Assign Room";
             this.assignRoomBTN.UseVisualStyleBackColor = false;
+            this.assignRoomBTN.Click += new System.EventHandler(this.assignRoomBTN_Click);
             // 
             // AssignRoomForm
             // 

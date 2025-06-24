@@ -24,5 +24,9 @@ namespace Hostel_Management_System.Controller
         {
             return RoomModel.UpdateRoom(room);
         }
+        public bool DeleteRoom(int id)
+        {
+            return RoomModel.DeleteRoom(id);
+        }
     }
 }

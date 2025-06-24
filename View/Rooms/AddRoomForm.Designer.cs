@@ -138,6 +138,7 @@
             this.addRoomBTN.TabIndex = 34;
             this.addRoomBTN.Text = "Add Room";
             this.addRoomBTN.UseVisualStyleBackColor = false;
+            this.addRoomBTN.Click += new System.EventHandler(this.addRoomBTN_Click);
             // 
             // AddRoomForm
             // 
