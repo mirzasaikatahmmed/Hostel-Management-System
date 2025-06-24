@@ -39,11 +39,14 @@
             this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.updateStudentBTN = new System.Windows.Forms.Button();
+            this.closePictureBox = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.closePictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.closePictureBox);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -153,6 +156,16 @@
             this.updateStudentBTN.Text = "Update";
             this.updateStudentBTN.UseVisualStyleBackColor = false;
             // 
+            // closePictureBox
+            // 
+            this.closePictureBox.Image = global::Hostel_Management_System.Properties.Resources.icons8_cross_96;
+            this.closePictureBox.Location = new System.Drawing.Point(664, 3);
+            this.closePictureBox.Name = "closePictureBox";
+            this.closePictureBox.Size = new System.Drawing.Size(35, 35);
+            this.closePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.closePictureBox.TabIndex = 37;
+            this.closePictureBox.TabStop = false;
+            // 
             // AddEditStaffForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -174,6 +187,7 @@
             this.Text = "AddEditStaffForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.closePictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,5 +206,6 @@
         private System.Windows.Forms.TextBox passwordTextBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button updateStudentBTN;
+        private System.Windows.Forms.PictureBox closePictureBox;
     }
 }

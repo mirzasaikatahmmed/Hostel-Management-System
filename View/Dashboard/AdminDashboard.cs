@@ -26,14 +26,14 @@ namespace Hostel_Management_System.Dashboard
         {
             InitializeComponent();
             currentUserId = userID;
-            LoadFormInPanel(new AdminDashboard(currentUserId));
+            //LoadFormInPanel(new AdminDashboard(currentUserId));
             LoadUsername();
         }
 
         private void LoadUsername()
         {
             UserController userController = new UserController();
-            string username = userController.GetUsernameById(currentUserId);
+            string username = userController.FetchUsername(currentUserId);
 
             userNameLabel.Text = $"{username}";
         }

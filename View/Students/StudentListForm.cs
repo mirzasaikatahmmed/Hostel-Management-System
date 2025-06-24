@@ -51,10 +51,19 @@ namespace Hostel_Management_System.Students
         {
             if (studentListDataGridView.SelectedRows.Count > 0)
             {
-                int studentId = Convert.ToInt32(studentListDataGridView.SelectedRows[0].Cells["StudentID"].Value);
-                var form = new AddEditStudentForm(studentId);
-                form.ShowDialog();
-                LoadStudentGrid();
+                DataGridViewRow selectedRow = studentListDataGridView.SelectedRows[0];
+
+                if (int.TryParse(selectedRow.Cells["StudentID"].Value?.ToString(), out int studentId))
+                {
+                    AddEditStudentForm editForm = new AddEditStudentForm(studentId);
+                    editForm.ShowDialog();
+
+                    LoadStudentGrid();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid student selected.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else
             {

@@ -54,13 +54,27 @@ namespace Hostel_Management_System.Students
 
         private void updateStudentBTN_Click(object sender, EventArgs e)
         {
+            string name = nameTextBox.Text.Trim();
+            string phone = contactNoTextBox.Text.Trim();
+            string email = emailTextBox.Text.Trim();
+            string password = passwordTextBox.Text.Trim();
+
+            if (string.IsNullOrWhiteSpace(name) ||
+                string.IsNullOrWhiteSpace(phone) ||
+                string.IsNullOrWhiteSpace(email) ||
+                string.IsNullOrWhiteSpace(password))
+            {
+                MessageBox.Show("All fields are required.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             StudentModel model = new StudentModel
             {
                 StudentID = studentId ?? 0,
-                Name = nameTextBox.Text.Trim(),
-                Phone = contactNoTextBox.Text.Trim(),
-                Email = emailTextBox.Text.Trim(),
-                Password = passwordTextBox.Text.Trim()
+                Name = name,
+                Phone = phone,
+                Email = email,
+                Password = password
             };
 
             bool success;
@@ -78,6 +92,11 @@ namespace Hostel_Management_System.Students
             {
                 MessageBox.Show("Operation failed.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void closePictureBox_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

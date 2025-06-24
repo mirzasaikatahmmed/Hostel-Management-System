@@ -162,8 +162,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\AuthController.cs" />
+    <Compile Include="Controller\StaffController.cs" />
     <Compile Include="Controller\StudentController.cs" />
     <Compile Include="Controller\UserController.cs" />
+    <Compile Include="Model\StaffModel.cs" />
     <Compile Include="Model\StudentModel.cs" />
     <Compile Include="Model\UserModel.cs" />
     <Compile Include="View\Bills\UpdateBillStatusForm.cs">
@@ -288,6 +290,9 @@
     </Compile>
     <EmbeddedResource Include="View\Auth\Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Dashboard\StaffDashboard.resx">
+      <DependentUpon>StaffDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Requests\ServiceRequestForm.resx">
       <DependentUpon>ServiceRequestForm.cs</DependentUpon>

@@ -39,11 +39,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.emailTextBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.closePictureBox = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.closePictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.closePictureBox);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -154,6 +157,17 @@
             this.label5.TabIndex = 25;
             this.label5.Text = "Email: ";
             // 
+            // closePictureBox
+            // 
+            this.closePictureBox.Image = global::Hostel_Management_System.Properties.Resources.icons8_cross_96;
+            this.closePictureBox.Location = new System.Drawing.Point(667, 3);
+            this.closePictureBox.Name = "closePictureBox";
+            this.closePictureBox.Size = new System.Drawing.Size(35, 35);
+            this.closePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.closePictureBox.TabIndex = 27;
+            this.closePictureBox.TabStop = false;
+            this.closePictureBox.Click += new System.EventHandler(this.closePictureBox_Click);
+            // 
             // AddEditStudentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -175,6 +189,7 @@
             this.Text = "AddEditStudentForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.closePictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,5 +207,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox emailTextBox;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox closePictureBox;
     }
 }
