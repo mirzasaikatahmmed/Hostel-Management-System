@@ -74,6 +74,7 @@
             this.updateStaffBTN.TabIndex = 15;
             this.updateStaffBTN.Text = "Update";
             this.updateStaffBTN.UseVisualStyleBackColor = false;
+            this.updateStaffBTN.Click += new System.EventHandler(this.updateStaffBTN_Click);
             // 
             // addStaffBTN
             // 
@@ -86,6 +87,7 @@
             this.addStaffBTN.TabIndex = 14;
             this.addStaffBTN.Text = "Add";
             this.addStaffBTN.UseVisualStyleBackColor = false;
+            this.addStaffBTN.Click += new System.EventHandler(this.addStaffBTN_Click);
             // 
             // staffListDataGridView
             // 
