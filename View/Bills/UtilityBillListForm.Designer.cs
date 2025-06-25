@@ -177,6 +177,7 @@
             this.saveBTN.TabIndex = 24;
             this.saveBTN.Text = "Save";
             this.saveBTN.UseVisualStyleBackColor = false;
+            this.saveBTN.Click += new System.EventHandler(this.saveBTN_Click_1);
             // 
             // monthDateTimePicker
             // 

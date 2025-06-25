@@ -76,6 +76,11 @@ namespace Hostel_Management_System.Bills
         }
         private void saveBTN_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void saveBTN_Click_1(object sender, EventArgs e)
+        {
             if (!int.TryParse(roomNoTextBox.Text, out int roomID))
             {
                 MessageBox.Show("Please enter a valid Room Number.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);

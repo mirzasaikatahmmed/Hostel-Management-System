@@ -110,7 +110,7 @@
             this.allServicesBTN.Name = "allServicesBTN";
             this.allServicesBTN.Size = new System.Drawing.Size(194, 51);
             this.allServicesBTN.TabIndex = 16;
-            this.allServicesBTN.Text = "All Services";
+            this.allServicesBTN.Text = "Request Service";
             this.allServicesBTN.UseVisualStyleBackColor = false;
             this.allServicesBTN.Click += new System.EventHandler(this.allServicesBTN_Click);
             // 
