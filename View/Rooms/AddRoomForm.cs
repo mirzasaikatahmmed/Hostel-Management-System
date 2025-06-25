@@ -132,5 +132,10 @@ namespace Hostel_Management_System.View.Rooms
                 MessageBox.Show("An unexpected error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void closePictureBox_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
