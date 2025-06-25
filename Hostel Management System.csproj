@@ -244,6 +244,12 @@
     <Compile Include="View\Rooms\AssignRoomForm.Designer.cs">
       <DependentUpon>AssignRoomForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Rooms\MyRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Rooms\MyRoom.Designer.cs">
+      <DependentUpon>MyRoom.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Rooms\RoomListForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -322,6 +328,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Rooms\AssignRoomForm.resx">
       <DependentUpon>AssignRoomForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Rooms\MyRoom.resx">
+      <DependentUpon>MyRoom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Rooms\RoomListForm.resx">
       <DependentUpon>RoomListForm.cs</DependentUpon>
