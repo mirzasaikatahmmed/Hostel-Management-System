@@ -1,0 +1,80 @@
+-- Users Table
+CREATE TABLE Users (
+    UserID INT PRIMARY KEY IDENTITY(1,1),
+    Username VARCHAR(255) NOT NULL UNIQUE,
+    Password VARCHAR(255) NOT NULL,
+    Role NVARCHAR(50) NOT NULL CHECK (Role IN ('Admin', 'Student', 'Staff')),
+    Email VARCHAR(255) UNIQUE
+);
+
+-- Rooms Table (Created before Students to resolve FK dependency)
+CREATE TABLE Rooms (
+    RoomID INT PRIMARY KEY IDENTITY(1,1),
+    RoomNumber VARCHAR(50) NOT NULL UNIQUE,
+    Capacity INT NOT NULL,
+    Status NVARCHAR(50) NOT NULL CHECK (Status IN ('Occupied', 'Available'))
+);
+
+-- Students Table
+CREATE TABLE Students (
+    StudentID INT PRIMARY KEY IDENTITY(1,1),
+    Name VARCHAR(255) NOT NULL,
+    Email VARCHAR(255) UNIQUE,
+    Phone VARCHAR(20),
+    AssignedRoomID INT,
+    UserID INT NOT NULL,
+    FOREIGN KEY (UserID) REFERENCES Users(UserID),
+    FOREIGN KEY (AssignedRoomID) REFERENCES Rooms(RoomID)
+);
+
+-- Admins Table
+CREATE TABLE Admins (
+    AdminID INT PRIMARY KEY IDENTITY(1,1),
+    UserID INT NOT NULL,
+    FOREIGN KEY (UserID) REFERENCES Users(UserID)
+);
+
+-- Staff Table
+CREATE TABLE Staff (
+    StaffID INT PRIMARY KEY IDENTITY(1,1),
+    Name VARCHAR(255) NOT NULL,
+    Role VARCHAR(255), -- This 'Role' seems to be specific to staff, not the general user role.
+    Phone VARCHAR(20),
+    UserID INT NOT NULL,
+    FOREIGN KEY (UserID) REFERENCES Users(UserID)
+);
+
+-- ServiceRequests Table
+CREATE TABLE ServiceRequests (
+    RequestID INT PRIMARY KEY IDENTITY(1,1),
+    StudentID INT NOT NULL,
+    RoomID INT,
+    Type VARCHAR(255) NOT NULL,
+    Description TEXT,
+    Status NVARCHAR(50) NOT NULL CHECK (Status IN ('Pending', 'In Progress', 'Completed', 'Rejected')),
+    FOREIGN KEY (StudentID) REFERENCES Students(StudentID),
+    FOREIGN KEY (RoomID) REFERENCES Rooms(RoomID)
+);
+
+-- UtilityBills Table
+CREATE TABLE UtilityBills (
+    BillID INT PRIMARY KEY IDENTITY(1,1),
+    RoomID INT NOT NULL,
+    Month DATE NOT NULL, -- Store as YYYY-MM-DD, e.g., '2024-01-01' for January 2024
+    Electricity DECIMAL(10, 2),
+    Water DECIMAL(10, 2),
+    Gas DECIMAL(10, 2),
+    Status NVARCHAR(50) NOT NULL CHECK (Status IN ('Paid', 'Unpaid')),
+    FOREIGN KEY (RoomID) REFERENCES Rooms(RoomID)
+);
+
+-- RoomAssignments Table
+CREATE TABLE RoomAssignments (
+    AssignmentID INT PRIMARY KEY IDENTITY(1,1),
+    RoomID INT NOT NULL,
+    StudentID INT NOT NULL,
+    StartDate DATE NOT NULL,
+    EndDate DATE,
+    FOREIGN KEY (RoomID) REFERENCES Rooms(RoomID),
+    FOREIGN KEY (StudentID) REFERENCES Students(StudentID)
+);
