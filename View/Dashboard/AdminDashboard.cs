@@ -26,7 +26,6 @@ namespace Hostel_Management_System.Dashboard
         {
             InitializeComponent();
             currentUserId = userID;
-            //LoadFormInPanel(new AdminDashboard(currentUserId));
             LoadUsername();
         }
 

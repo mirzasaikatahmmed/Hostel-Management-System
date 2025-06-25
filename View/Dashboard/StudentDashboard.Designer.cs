@@ -33,7 +33,6 @@
             this.logoutPictureBox = new System.Windows.Forms.PictureBox();
             this.sidebarPanel = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.utilityBillBTN = new System.Windows.Forms.Button();
             this.allServicesBTN = new System.Windows.Forms.Button();
             this.myRoomBTN = new System.Windows.Forms.Button();
             this.dashboardBTN = new System.Windows.Forms.Button();
@@ -77,11 +76,11 @@
             this.logoutPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.logoutPictureBox.TabIndex = 10;
             this.logoutPictureBox.TabStop = false;
+            this.logoutPictureBox.Click += new System.EventHandler(this.logoutPictureBox_Click);
             // 
             // sidebarPanel
             // 
             this.sidebarPanel.Controls.Add(this.pictureBox2);
-            this.sidebarPanel.Controls.Add(this.utilityBillBTN);
             this.sidebarPanel.Controls.Add(this.allServicesBTN);
             this.sidebarPanel.Controls.Add(this.myRoomBTN);
             this.sidebarPanel.Controls.Add(this.dashboardBTN);
@@ -102,18 +101,6 @@
             this.pictureBox2.TabIndex = 18;
             this.pictureBox2.TabStop = false;
             // 
-            // utilityBillBTN
-            // 
-            this.utilityBillBTN.BackColor = System.Drawing.SystemColors.Highlight;
-            this.utilityBillBTN.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.utilityBillBTN.ForeColor = System.Drawing.Color.White;
-            this.utilityBillBTN.Location = new System.Drawing.Point(26, 339);
-            this.utilityBillBTN.Name = "utilityBillBTN";
-            this.utilityBillBTN.Size = new System.Drawing.Size(194, 51);
-            this.utilityBillBTN.TabIndex = 17;
-            this.utilityBillBTN.Text = "Utility Bill";
-            this.utilityBillBTN.UseVisualStyleBackColor = false;
-            // 
             // allServicesBTN
             // 
             this.allServicesBTN.BackColor = System.Drawing.SystemColors.Highlight;
@@ -125,6 +112,7 @@
             this.allServicesBTN.TabIndex = 16;
             this.allServicesBTN.Text = "All Services";
             this.allServicesBTN.UseVisualStyleBackColor = false;
+            this.allServicesBTN.Click += new System.EventHandler(this.allServicesBTN_Click);
             // 
             // myRoomBTN
             // 
@@ -137,6 +125,7 @@
             this.myRoomBTN.TabIndex = 15;
             this.myRoomBTN.Text = "My Room";
             this.myRoomBTN.UseVisualStyleBackColor = false;
+            this.myRoomBTN.Click += new System.EventHandler(this.myRoomBTN_Click);
             // 
             // dashboardBTN
             // 
@@ -149,6 +138,7 @@
             this.dashboardBTN.TabIndex = 12;
             this.dashboardBTN.Text = "Dashboard";
             this.dashboardBTN.UseVisualStyleBackColor = false;
+            this.dashboardBTN.Click += new System.EventHandler(this.dashboardBTN_Click);
             // 
             // label1
             // 
@@ -224,7 +214,6 @@
         private System.Windows.Forms.PictureBox logoutPictureBox;
         private System.Windows.Forms.Panel sidebarPanel;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button utilityBillBTN;
         private System.Windows.Forms.Button allServicesBTN;
         private System.Windows.Forms.Button myRoomBTN;
         private System.Windows.Forms.Button dashboardBTN;
